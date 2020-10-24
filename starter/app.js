@@ -18,5 +18,12 @@ var controller = (function(budgetCtrl, UICtrl) {
     console.log('clicked')
   });
 
+  document.addEventListener('keypress', function(event) {
+
+    if(event.keyCode === 13 || event.which === 13) {
+      console.log('enter was pressed')
+    }
+
+  });
 
 })(budgetController, UIController);
